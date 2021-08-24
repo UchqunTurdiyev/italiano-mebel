@@ -1,0 +1,284 @@
+@media (min-width:1600px){
+    .icon_box{
+        width: 95%;
+        margin:auto;
+        margin: 20px 0;
+    }
+}
+@media (max-width:1600px){
+    .icon_box{
+        width: 95%;
+        margin:auto;
+        margin: 20px 0;
+    }
+    .box_carusel .container{
+        width: 90%;
+    }
+    .box_carusel{
+        width: 23%;
+        margin-top: 30px;
+    
+    }
+
+}
+
+
+@media (max-width:1200px){
+    .container{
+        width: 90%;
+        margin:0 auto;
+    }
+    main .line__gradient{
+        background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.04) 100%);
+        mix-blend-mode: overlay;
+        width: 75%;
+    }
+    
+    /* OSHXONA */
+}
+
+@media (max-width:1100px){
+    .carusel_show{
+        flex-wrap: wrap;
+    }
+    .box_carusel{
+        width: 30%;
+        margin-top: 30px;
+    
+    }
+}
+
+
+@media (max-width:1060px){
+    nav ul li{
+        margin-right: 20px;
+    }
+    
+    /* OSHXONA */
+    .box{
+        width: 33%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 34px;
+    }
+}
+
+@media (max-width:900px){
+    nav ul li{
+        margin-right: 25px;
+    }
+    nav ul input{
+       display: none;
+    }
+    ul .fa-search{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+    
+    /* OSHXONA */
+
+    .big_box{
+        justify-content: space-around;
+        
+    }
+    .box_carusel{
+        width: 44%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav .bars{
+        display: block;
+        background-color:#F2F2F2;
+    }
+    nav ul li{
+        display: none;
+    }
+    main{
+        width: 100%;
+        height: 415px;
+        background-image: url(../Img/show_navbar\ 1623.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main .line__gradient{
+        background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.04) 100%);
+        mix-blend-mode: overlay;
+        width: 70%;
+        height: 415px;
+
+    }
+    .line_text{
+        z-index: 999;
+        position:absolute;
+        top:50px;
+        left:40px;
+        width: 90%;
+    }
+    .line_text h1{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+        margin-top: 100px;
+        z-index: 999;
+    }
+    .line_text p{
+        width: 100%;
+    }
+    
+    /* OSHXONA */
+    
+    .box{
+        font-size: 25px;
+    }
+    .box_carusel{
+        width: 45%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .head_firs{
+        padding: 0 30px;
+    }
+    main.container{
+        width: 100%;
+    }
+    main .line__gradient{
+        width: 85%;
+
+    }
+    .line_text p{
+        padding-top: 10px;
+        width: 100%;
+    }
+    .line_text button{
+        margin-top: 30px;
+    }
+    
+    /* OSHXONA */
+
+    .carusel_show{
+        justify-content: center;
+    }
+
+    .box_carusel{
+        width: 40%;
+        height: 280px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .box_carusel img{
+        width: 100%;
+        height: 120px;
+    }
+    .container b{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .box{
+        font-size: 17px;
+    }
+    .box_carusel{
+        width: 44%;
+        height: 280px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+  
+  
+    .icon > .far {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 420px) {
+    main{
+        height: 415px;
+    }
+    main .line__gradient{
+        width: 90%;
+        height: 415px;
+    }
+    .hed_nambe a{
+        font-size: 18px;
+        line-height: 17px;
+        margin-left: 5px;
+    }
+    .head_firs{
+        padding:0 10px;
+    }
+    .line_text{
+        width: auto;
+    }
+    
+    /* OSHXONA */
+    .farniture .container{
+        width: 95%;
+    }
+    .carusel h1{
+        font-size: 20px;
+    }
+    .icon_box{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 32px;
+        margin: 10px 0;
+    }
+
+    .box{
+        font-size: 15px;
+    }
+
+    .container b{
+        font-size: 12px;
+    }
+    .container span{
+        font-size: 15px;
+    }
+    .box_carusel{
+        width: 40%;
+        height: 230px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    
+}
+
+
+@media (max-width: 360px){
+    main{
+        width: 100%;
+        height: 209px;
+        background-image: url(../Img/adaptivny\ main.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main .line__gradient{
+        width: 100%;
+        height: 209px;
+    }
+    .line_text{
+        z-index: 999;
+        position:absolute;
+        top:10px;
+        left:10px;
+    }
+    .line_text p{
+        display: none;
+    }
+    .line_text button{
+        margin-top: 60px;
+    }
+
+    /* OSHXONA */
+
+
+}
