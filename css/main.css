@@ -4,6 +4,9 @@
         margin:auto;
         margin: 20px 0;
     }
+    .about{
+        margin-top: -40px;
+    }
 }
 @media (max-width:1600px){
     .icon_box{
@@ -19,11 +22,27 @@
         margin-top: 30px;
     
     }
+    .container > button{
+        margin-left: 41%;
+        margin-top: -10px;
+    }
+    .about{
+        margin-top: -40px;
+    }
+    .about p{
+        width: 60%;
+    }
+    .about_video img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+   
 
 }
 
 
-@media (max-width:1200px){
+@media (max-width:1220px){
     .container{
         width: 90%;
         margin:0 auto;
@@ -33,8 +52,11 @@
         mix-blend-mode: overlay;
         width: 75%;
     }
-    
-    /* OSHXONA */
+    .form_item input{
+        width: 350px;
+        height: 60px;
+    }
+
 }
 
 @media (max-width:1100px){
@@ -45,6 +67,9 @@
         width: 30%;
         margin-top: 30px;
     
+    }
+    .about p{
+        width: 70%;
     }
 }
 
@@ -61,6 +86,36 @@
         font-weight: 600;
         font-size: 34px;
     }
+
+    /* DISCOURT */
+
+    .discount_cont{
+        justify-content: space-around;
+    }
+    .container > button{
+        margin-left: 38%;
+        margin-top: 10px;
+    }
+    .discount_box img{
+        width: 100%;
+        margin: auto;
+    }
+
+    .marca{
+        padding: 40px 0;
+        margin-top: 30px;
+    }
+    .help_item{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    .help_box{
+        margin-top: 20px;
+        width: 404px;
+        height: 133px;
+    }
+
 }
 
 @media (max-width:900px){
@@ -85,6 +140,26 @@
         width: 44%;
         margin-top: 30px;
     }
+    .container > button{
+        margin-left: 35%;
+        margin-top: 30px;
+    }
+    .discount_box h1{
+        font-size: 22px;
+        line-height: 28px; 
+     }
+    .discount_box  p{
+        font-size: 18px;
+        line-height: 25px;
+      }
+
+      .marca img:nth-child(4){
+          display: none;
+      }
+      form{
+          display: none;
+      }
+
 }
 
 @media (max-width: 768px) {
@@ -137,9 +212,40 @@
         width: 45%;
         margin-top: 30px;
     }
+    .discount_box img{
+        width: 100%;
+        margin: auto;
+    }
+    .container > button{
+        margin-left: 30%;
+        margin-top: 60px;
+    }
+    .marca{
+        justify-content: space-between;
+        padding: 30px 0;
+        margin-top: 30px;
+    }
+    .marca img{
+        width: 30%;
+    }
+    .about_video img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .container p{
+        width: 80%;
+    }
+    .media_icons a:nth-child(4){
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
+    h1{
+        font-size: 22px;
+    }
+
     .head_firs{
         padding: 0 30px;
     }
@@ -169,13 +275,33 @@
         height: 280px;
         margin-right: 20px;
         margin-left: 20px;
+
     }
     .box_carusel img{
-        width: 100%;
-        height: 120px;
+        height: 140px;
+    }
+
+    .discount{
+        display: none;
+    }
+    .icon_box{
+        width: 95%;
+        margin: auto;
+        height: 52px;
+        margin: 10px 0;
+    }
+    .icon > .far {
+        padding: 0 15px;
     }
     .container b{
-        font-size: 15px;
+        font-size: 18px;
+    }
+
+    .about{
+        margin-top: -120px;
+    }
+    .container p{
+        width: 90%;
     }
 }
 
@@ -190,7 +316,22 @@
         margin-right: 10px;
         margin-left: 10px;
     }
-  
+    .icon_box{
+        width: 95%;
+        margin: auto;
+        height: 42px;
+        margin: 15px 0;
+    }
+    .container b{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .box_carusel img{
+        height: 130px;
+    }
+    .container h1{
+        margin-top: -30px;
+    }
   
     .icon > .far {
         padding: 0 10px;
@@ -235,12 +376,15 @@
     .box{
         font-size: 15px;
     }
+    .box_carusel img{
+        height: 110px;
+    }
 
     .container b{
-        font-size: 12px;
+        font-size: 13px;
     }
     .container span{
-        font-size: 15px;
+        font-size: 13px;
     }
     .box_carusel{
         width: 40%;
@@ -248,6 +392,16 @@
         margin-right: 10px;
         margin-left: 10px;
     }
+    .marca img:nth-child(5){
+        display: block;
+    }
+    .marca img:nth-child(3){
+        display: none;
+    }
+    .container h1{
+        margin-top: -40px;
+    }
+    
 
     
 }
@@ -279,6 +433,9 @@
     }
 
     /* OSHXONA */
+    .box_carusel{
+        width: 70%;
+    }
 
 
 }

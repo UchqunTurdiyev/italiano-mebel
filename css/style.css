@@ -1,12 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Fira+Mono:wght@400;700&family=Kaisei+Opti&family=Merriweather:wght@300;400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Cousine', monospace;
+    font-family: 'Fira Mono', monospace;
+    font-family: 'Kaisei Opti', serif;
+    font-family: 'Merriweather', serif;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -387,7 +389,7 @@ main .line__gradient{
 
 .about{
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 0;
 }
 .about h1{
     font-weight: bold;
@@ -406,12 +408,16 @@ main .line__gradient{
     color: #1E2725;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
+    padding: 0;
 }
 .about_video{
     width: 100%;
-    height: 620px;
-    border:1px solid;
     margin-top: 35px;
+}
+.about_video img{
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
 }
 .container > h1{
     padding: 80px 0 10px 0;
@@ -427,7 +433,9 @@ main .line__gradient{
     border-right:none;
     margin-top: 30px;
 }
-
+.marca img:nth-child(5){
+    display: none;
+}
 /* MEDIA SECTION */
 
 .media{
@@ -446,7 +454,7 @@ main .line__gradient{
 .media p{
     font-weight: normal;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 30px;
     color: #1E2725;
     text-align: center;
 }
@@ -533,6 +541,7 @@ main .line__gradient{
     text-align: center;
     color: #1E2725;
     padding-top: 15px;
+    font-family: ;
 }
 
 .forms{
@@ -552,6 +561,7 @@ main .line__gradient{
     background: #F8F8F8;
     overflow: hidden;
     padding-left: 20px;
+    margin-right: 15px;
 }
 .form_item label{
     position: relative;
@@ -564,9 +574,8 @@ main .line__gradient{
 .btn{
     display: inline-block;
     width: 203px;
-    position: absolute;
-    top:168px;
-    left: 740px;
+    margin-left: 100%;
+    margin-top: -11%;
     display: flex;
     justify-content: space-around;
     align-items: center;
