@@ -1,14 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Fira+Mono:wght@400;700&family=Kaisei+Opti&family=Merriweather:wght@300;400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cousine', monospace;
-    font-family: 'Fira Mono', monospace;
-    font-family: 'Kaisei Opti', serif;
-    font-family: 'Merriweather', serif;
+    font-family: 'Lato', sans-serif;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
