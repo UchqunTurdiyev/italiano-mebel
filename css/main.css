@@ -56,6 +56,9 @@
         width: 350px;
         height: 60px;
     }
+    .start_work{
+        margin-top: -30px;
+    }
 
 }
 
@@ -321,7 +324,9 @@
     .line_text button{
         margin-top: 30px;
     }
-
+    .farniture{
+        margin-top: -20px;
+    }
     
     .carusel{
         margin-top: -30px;
@@ -376,6 +381,9 @@
         background: #F8F8F8;
         margin-top: -40px;
     }
+    .media_texts{
+        display: none;
+    }
     .media_icons{
         margin: 0;
         padding: 15px;
@@ -402,7 +410,7 @@
     footer{
         width: 100%;
         position: relative;
-        top: 1120px;
+        
     }
     .foot_img img{
         width: 100%;
@@ -480,10 +488,7 @@
     main{
         height: 415px;
     }
-    main .line__gradient{
-        width: 90%;
-        height: 415px;
-    }
+    
     .hed_nambe a{
         font-size: 18px;
         line-height: 17px;
@@ -574,10 +579,14 @@
 @media (max-width: 420px){
     main{
         width: 100%;
-        height: 289px;
+        height: 309px;
         background-image: url(../Img/adaptivny\ main.jpg);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    main .line__gradient{
+        width: 90%;
+        height: 309px;
     }
     .paragrf{
         display: none;

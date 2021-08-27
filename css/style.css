@@ -10,6 +10,7 @@
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
+    scroll-behavior:smooth;
 }
 a{
     text-decoration: none;
@@ -49,6 +50,18 @@ span{
     font-size: 18px;
     line-height: 21px;
     color: #828282;
+}
+select{
+    background:none;
+    border:none;
+    color:#fff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 5px;
+    outline: none;
+}
+option{
+    color:black;
 }
 .head_firs{
     width: 100%;
