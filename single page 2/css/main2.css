@@ -1,0 +1,285 @@
+@media (max-width:1620px){
+
+    .container{
+        position:relative;
+        width: 90%;
+        padding: 20px;
+    }
+    .link{
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        
+    }
+}
+
+
+@media (max-width:1420px){
+
+    .container{
+        position:relative;
+        width: 90%;
+        padding: 20px;
+    }
+    .link{
+        width: 90%;
+        margin: auto;
+        padding: 20px;
+        
+    }
+}
+
+
+@media (max-width:1220px){
+
+    .container{
+        position:relative;
+        width: 90%;
+        padding: 20px;
+    }
+    .container .card .imgBx{
+        height: 220px;
+    }
+    .link{
+        width: 90%;
+        margin: auto;
+        padding-top: 20px;
+        
+    }
+
+    form .kids_img{
+        display: none;
+    }
+}
+
+@media (max-width:1100px){
+    nav ul li{
+        margin-right: 20px;
+    }
+    
+    .forms{
+        justify-content: center;
+        padding: 0;
+    }
+    .form_item{
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    .foot_center{
+        display: none;
+    }
+
+    .btn{
+        display: inline-block;
+        width: 203px;
+        margin-left: 30%;
+        margin-top: 10%;
+    }
+    .container .card .imgBx{
+        height: 170px;
+    }
+    
+}
+
+@media (max-width:919.5px){
+    nav ul li{
+        margin-right: 25px;
+    }
+    nav ul input{
+       display: none;
+    }
+    ul .fa-search{
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+
+    .container{
+        width: 98%;
+    }
+    .container .card{
+        width: 45%;
+    }
+    .container .card .imgBx{
+        height: 200px;
+    }
+    form .kids_img{
+        display: none;
+    }
+    .btn{
+      display: inline-block;
+      width: 203px;
+      margin-left: 15%;
+      margin-top: 10%;
+  }
+  .forms{
+      justify-content: center;
+  }
+  .form_item{
+      margin-left: 50%;
+      width: 100%;
+  }
+  .form_item input{
+    width: 95%;
+    height: 60px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    overflow: hidden;
+    padding-left: 20px;
+    margin-right: 15px;
+}
+
+  footer .container{
+      width: 90%;
+      margin: auto;
+  }
+  .foot_bottom h3{
+      margin-left: 10%;
+  }
+  .foot_text h1{
+      font-size: 25px;
+  }
+    
+}
+
+@media (max-width: 768px) {
+    nav .bars{
+        display: block;
+        background-color:#F2F2F2;
+    }
+    nav ul li{
+        display: none;
+    }
+    .footer_item{
+        top: 120px;
+    }
+    .footer_item h1{
+        font-size: 22px;
+    }
+    .foot_bottom{
+        margin-top: -10px;
+    }
+    .forms{
+        display: block;
+    }
+    .form_item{
+        margin-left: 50%;
+        width: 80%;
+    }
+    .form_item input{
+      width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 22px;
+    }
+    #internet-item{
+        margin-top: -20px;
+    }
+    .head_firs{
+        padding: 0 30px;
+    }
+    
+    .container .card .imgBx{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    .container{
+        position:relative;
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap:wrap;
+        padding: 20px;
+    }
+    .container .card .imgBx{
+        height: 150px;
+    }
+    .container .card .content{
+        padding: 10px;
+    }
+    .container .card .content h3{
+        font-size: 17px;
+    }
+
+    .container .card .content h2{
+        padding-top: 10px;
+        font-size: 16px;
+    }
+    .foot_right{
+        display: none;
+    }
+
+    .foot_text{
+        padding-top: 40px;
+    }
+    .foot_bottom{
+        margin-top: -10px;
+    }
+    
+    .foot_bottom b{
+        display: none;
+    }
+    .forms{
+        display: block;
+    }
+    .form_item{
+    margin-left: 50%;
+    width: 95%;
+    }
+.form_item input{
+  width: 90%;
+   }
+}
+
+@media (max-width: 450px) {
+
+    .corzina input{
+        display: none;
+    }
+    .container .card .imgBx{
+        height: 110px;
+        padding: 10px;
+    }
+    .form_item input{
+        width: 100%;
+        height: 60px;
+        overflow: hidden;
+        padding-left: 00px;
+        margin-right: 0px;
+    }
+    .form_item button{
+        margin-left: 20%;
+    }
+    
+    .foot_bottom h3{
+        margin-left: 2%;
+        font-size: 12px;
+    }
+    footer{
+        width: 100%;
+        position: relative;
+    }
+    .footer_item{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 100px;
+        z-index: 999;
+    }
+    .form_item{
+        margin-left: 50%;
+        width: 90%;
+    }
+        .foot_text h4{
+        width: 80%;
+    }
+
+}

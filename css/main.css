@@ -118,11 +118,7 @@
         width: 404px;
         height: 133px;
     }
-    footer{
-        width: 100%;
-        position: relative;
-        top: 750px;
-    }
+  
     .foot_center{
         display: none;
     }
@@ -181,11 +177,7 @@
     .form_item{
         margin-left: 30%;
     }
-    footer{
-        width: 100%;
-        position: relative;
-        top: 920px;
-    }
+  
     footer .container{
         width: 95%;
         margin: auto;
@@ -197,12 +189,15 @@
 }
 
 @media (max-width: 768px) {
-    nav .bars{
+    nav .bars img{
         display: block;
         background-color:#F2F2F2;
     }
-    nav ul li{
+    nav ul {
         display: none;
+        position: absolute;
+        top: 50px;
+        right: 20px;
     }
     main{
         width: 100%;
@@ -292,12 +287,10 @@
         display: none;
     }
     .footer_item h1{
-        font-size: 20px;
+        font-size: 22px;
     }
-    footer > .container{
-        position: relative;
-        top: 260px;
-        z-index: 999;
+    .foot_bottom{
+        margin-top: 65px;
     }
    
 }
@@ -407,28 +400,16 @@
     .foot_right{
         display: none;
     }
-    footer{
-        width: 100%;
-        position: relative;
-        
-    }
-    .foot_img img{
-        width: 100%;
-        position: absolute;
-        height: 265px;
+
+    .foot_text{
+        padding-top: 40px;
     }
     .foot_bottom{
-        top: 530px;
+        margin-top: 25px;
     }
-    .foot_bottom h3{
-        margin-left: 2%;
-        font-size: 18px;
-    }
+    
     .foot_bottom b{
         display: none;
-    }
-    footer .container{
-        top:250px;
     }
 }
 
@@ -463,18 +444,20 @@
         padding: 0 10px;
     }
     .form_item{
-        margin-left: 2%;
-        margin-right: 2%;
+        margin: 0 2px;
     }
     .form_item input{
         width: 100%;
         height: 60px;
         overflow: hidden;
-        padding-left: 20px;
-        margin-right: 15px;
+        padding-left: 00px;
+        margin-right: 0px;
     }
     .form_item button{
         margin-left: 20%;
+    }
+    .foot_img{
+        width: 100%;
     }
 }
 

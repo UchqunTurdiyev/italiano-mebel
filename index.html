@@ -7,7 +7,10 @@
     <title>italiano</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
-     
+
+       <!-- oWel carusel css -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+     <!-- iconca  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -34,10 +37,13 @@
                 <li><a href="index2.html">Katalog</a></li>
                 <li><a href="#">Biz haqimizda</a></li>
                 <li><a href="#">Aloqa </a></li>
-                <input type="text"placeholder="matn kiriting">
-                <a href="#"><i class="fas fa-search"></i></a>
-                <img src="./Img/SAVAT.svg" alt="bu erda rasm bor">
             </ul>
+            <div class="corzina">
+                 <input type="text"placeholder="matn kiriting">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <img src="./Img/SAVAT.svg" alt="bu erda rasm bor">
+            </div>
+           
         </nav>
     </div>
     </div>
@@ -129,11 +135,27 @@
                  
             </div>
 
-        </div>
-    </div>
-    </div>
+            <div class="box_carusel remove_right">
+                <img src="./Img/carusel-1.png" alt="">
+                <div class="container"> 
+                      <div class="icon_box">
+                        <div class="icon"><i class="fas fa-share-alt"></i></div>
+                        <div class="icon"><i class="far fa-eye"></i></div>
+                        <div class="icon"><i class="fas fa-briefcase"></i></div>
+                    </div>
+                <span>Morezza</span><br>
+                <b>2.560.000 so‘m</b>
+            </div>
+                 
+            </div>
 
+        </div>
+       
+    </div>
+    </div>
+    
     </section>
+ 
 
       <!-- SECTION DISCOUNT -->
 
@@ -176,12 +198,10 @@
                      <h1>Oshxona mebellari</h1>
                 <h3>Furniture design</h3>
             </div>
-                <div class="carusel_text tect_icons"><i class="fas fa-angle-left"></i> <i class="fas fa-angle-right"></i></div>
+                <div class="carusel_text tect_icons right"><i class="fas fa-angle-left"></i> <i class="fas fa-angle-right""></i></div>
             </div>
-            
-                
-        
-                <div class="carusel_show">
+
+                 <div class="carusel_show owl_carusel">
                     <div class="box_carusel">
                         <img src="./Img/carusel-1.png" alt="">
                         <div class="container"> 
@@ -209,6 +229,18 @@
                     </div>
                          
                     </div>
+                    <div class="box_carusel">
+                        <img src="./Img/carusel-1.png" alt="">
+                        <div class="container"> 
+                              <div class="icon_box">
+                                <div class="icon"><i class="fas fa-share-alt"></i></div>
+                                <div class="icon"><i class="far fa-eye"></i></div>
+                                <div class="icon"><i class="fas fa-briefcase"></i></div>
+                            </div>
+                        <span>Morezza</span><br>
+                        <b>2.560.000 so‘m</b>
+                    </div>
+                    </div>
         
                     <div class="box_carusel">
                         <img src="./Img/carusel-1.png" alt="">
@@ -223,9 +255,8 @@
                     </div>
                          
                     </div>
-        
-                    <div class="box_carusel">
-                        <img src="./Img/carusel-1.png" alt="">
+                    <div class="box_carusel carusel_active">
+                        <img src="./Img/Youtube - biz haqimizda.jpg" alt="">
                         <div class="container"> 
                               <div class="icon_box">
                                 <div class="icon"><i class="fas fa-share-alt"></i></div>
@@ -234,17 +265,16 @@
                             </div>
                         <span>Morezza</span><br>
                         <b>2.560.000 so‘m</b>
-                    </div>              
+                    </div>                        
                     </div>
-        
-                </div>
+                </div>              
             </div>
     </div>
     </section> 
 
     <!--MEDIA SECTION  -->
 
-     <section class="media">
+      <section class="media">
          <div class="media_texts">
         <h1>Bizni ijtimoiy tarmoqlarda kuzating</h1>
         <p>Aksiya va chegirmalardan xabardor bo’lish uchun ijtimoiy tarmoqlardagi sahifalarimizga a’zo bo’ling</p>
@@ -255,8 +285,10 @@
             <a href=""><img src="./Img/Vector (1).svg" alt=""></a>
             <a href=""><i class="fab fa-youtube"></i></a>
         </div>
-        
-        <div class="help">
+    </section>  
+
+
+    <section class="help">
             <div class="container">
                 <h1>Nega bizni tanlashadi?</h1>
                 <div class="help_item">
@@ -282,6 +314,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="start_work">
                 <h1>Ishni boshlaymizmi?</h1>
                 <p>Mazkur formani to’ldiring va operatorimiz siz bilan 24 soat ichida bog‘lanadi.</p>
@@ -292,23 +325,27 @@
                     <label for="">Ismingiz</label><br>
                     <input type="text"placeholder="Uchqun"><br><br>
                     <label for="">Telefon raqam <span>*</span></label><br>
-                    <input type="tel"> <button class="btn">Jo‘natish <img src="./Img/button.png" alt=""></button>
+                    <input type="number"placeholder="99 _ _ _"> 
+                    <button class="btn">Jo‘natish <img src="./Img/button.png" alt=""></button>
                 </div>
                 <div class="form_item kids_img">
                     <img src="./Img/Cool Kids - High Tech 1.png" alt="">
                 </form></div>
                 </div>
         </div> 
-
-          </section> 
+        </section> 
+       
         
         <!-- FOOTER SECTION -->
 
-       <div class="clr"></div>
-     <footer>
-       
-         <div class="container">
-             <a href="#"><img src="./Img/Scroll.png" alt=""></a>
+    
+       <footer>
+      
+        <div class="container">
+            <div class="foot_scroll">
+                <a href="#"><img src="./Img/Scroll.png" alt=""></a>
+            </div>
+              
         
              <div class="footer_item">
                  <div class="foot_text"> 
@@ -321,9 +358,9 @@
                     <h1>Ma’lumotlar</h1>             
                     <h4>Biz haqimizda</h4>
                     <h4>Aloqa</h4> 
-                 </div>
+                 </div> 
 
-                 <div class="foot_text foot_right">
+                  <div class="foot_text foot_right">
                     <h1>Ijtimoiy tarmoqlar</h1>
                     <h4><a href=""><i class="fab fa-facebook"></i> Facebook</a> </h4>
                     <h4><a href=""><i class="fab fa-instagram"></i></i> Instagram</a></h4> 
@@ -333,15 +370,43 @@
             
          </div>
          </div>
-         <div class="foot_img"> <img src="./Img/footer.jpg" alt=""></div>
-         <div class="foot_bottom">
-             <h3>Copyright  &copy;  2016 <span> Italiano. </span> <b> Barcha  huquqlar  himoyalangan.</b></h3>
-         </div>
-        
-     </footer> 
-        
-    
+        <div class="foot_img"> <img src="./Img/footer.jpg" alt=""></div>
+     </footer>  
+     
+     <div class="foot_bottom">
+         <h3>Copyright  &copy;  2016 <span> Italiano. </span> <b> Barcha  huquqlar  himoyalangan.</b></h3>
+     </div> 
 
+     <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+     <!-- oWel carusel -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+ <script src="./js/script.js">
+  </script>
+
+<script>
+      $(document).ready(function(){
+        $('.post_container').owlCarousel({
+            pagination:false,
+            autoplay:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                700:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                },
+                1200:{
+                    items:4
+                },
+            }
+        })
+      })
+</script>
 </body>
 </html>
