@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/main.css">
 
-       <!-- oWel carusel css -->
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-     <!-- iconca  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- ICONCA AWESOME -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- CARUSEL IMAGE..................... -->
+<!-- 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script> -->
+
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet" />  -->
+
 </head>
 <body>
     <header>
@@ -28,10 +38,10 @@
             </div>
         </div>
         <div class="navigation">
-        <div class="container">
+        <div class="containers">
         <nav>
            <div class="bars"><img src="./Img/Vector (2).svg" alt=""></div> 
-            <img src="./Img/ITALIANO.png" alt="">
+            <img class="italiano" src="./Img/ITALIANO.png" alt="">
             <ul>
                 <li><a href="#">Bosh sahifa</a></li>
                 <li><a href="index2.html">Katalog</a></li>
@@ -48,7 +58,7 @@
     </div>
     </div>
         <main>
-                <div class="container">
+                <div class="containers">
                 <div class="line_text">  <h1>NEW COLLECTION</h1>
             <p>Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful.</p>
             <button>Buyurtma qilish <i class="fas fa-arrow-right"></i></button>
@@ -62,7 +72,7 @@
     <!-- SECTION OSHXONA -->
 
     <section class="farniture">
-    <div class="container">
+    <div class="containers">
         <div class="big_box">
         <div class="box"><h1>800+</h1><span>Mijozlar</span></div>
         <div class="box"><h1>5 yil+</h1><span>Tajriba</span></div>
@@ -80,9 +90,10 @@
         
 
         <div class="carusel_show">
+
             <div class="box_carusel">
                 <img src="./Img/carusel-1.png" alt="">
-                <div class="container"> 
+                <div class="containers"> 
                       <div class="icon_box">
                         <div class="icon"><i class="fas fa-share-alt"></i></div>
                         <div class="icon"><i class="far fa-eye"></i></div>
@@ -95,7 +106,7 @@
             </div>
             <div class="box_carusel">
                 <img src="./Img/carusel-1.png" alt="">
-                <div class="container"> 
+                <div class="containers"> 
                       <div class="icon_box">
                         <div class="icon"><i class="fas fa-share-alt"></i></div>
                         <div class="icon"><i class="far fa-eye"></i></div>
@@ -109,7 +120,7 @@
 
             <div class="box_carusel">
                 <img src="./Img/carusel-1.png" alt="">
-                <div class="container"> 
+                <div class="containers"> 
                       <div class="icon_box">
                         <div class="icon"><i class="fas fa-share-alt"></i></div>
                         <div class="icon"><i class="far fa-eye"></i></div>
@@ -123,7 +134,7 @@
 
             <div class="box_carusel">
                 <img src="./Img/carusel-1.png" alt="">
-                <div class="container"> 
+                <div class="containers"> 
                       <div class="icon_box">
                         <div class="icon"><i class="fas fa-share-alt"></i></div>
                         <div class="icon"><i class="far fa-eye"></i></div>
@@ -137,7 +148,7 @@
 
             <div class="box_carusel remove_right">
                 <img src="./Img/carusel-1.png" alt="">
-                <div class="container"> 
+                <div class="containers"> 
                       <div class="icon_box">
                         <div class="icon"><i class="fas fa-share-alt"></i></div>
                         <div class="icon"><i class="far fa-eye"></i></div>
@@ -145,9 +156,22 @@
                     </div>
                 <span>Morezza</span><br>
                 <b>2.560.000 so‘m</b>
+            </div>       
             </div>
-                 
-            </div>
+
+            <div class="box_carusel">
+              <img src="./Img/carusel-1.png" alt="">
+              <div class="containers"> 
+                    <div class="icon_box">
+                      <div class="icon"><i class="fas fa-share-alt"></i></div>
+                      <div class="icon"><i class="far fa-eye"></i></div>
+                      <div class="icon"><i class="fas fa-briefcase"></i></div>
+                  </div>
+              <span>Morezza</span><br>
+              <b>2.560.000 so‘m</b>
+          </div>
+               
+          </div>
 
         </div>
        
@@ -155,12 +179,14 @@
     </div>
     
     </section>
- 
+
+    <!-- CARUSELL IMAGE ........................ -->
+
 
       <!-- SECTION DISCOUNT -->
 
     <section class="discount">
-        <div class="container">
+        <div class="containers">
         <div class="discount_cont">
         <div class="discount_box dicount_border">
          <h1>CHEGIRMA</h1>
@@ -178,7 +204,7 @@
     <!-- SECTION ABOUT -->
 
          <section class="about">
-        <div class="container">
+        <div class="containers">
         <h1>Biz haqimizda</h1>
         <p>Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy. <span class="paragrf"> text, this is simply copy that serves to fill a space without actually saying anything meaningful.</span></p>
         <div class="about_video">
@@ -204,7 +230,7 @@
                  <div class="carusel_show owl_carusel">
                     <div class="box_carusel">
                         <img src="./Img/carusel-1.png" alt="">
-                        <div class="container"> 
+                        <div class="containers"> 
                               <div class="icon_box">
                                 <div class="icon"><i class="fas fa-share-alt"></i></div>
                                 <div class="icon"><i class="far fa-eye"></i></div>
@@ -218,7 +244,7 @@
         
                     <div class="box_carusel">
                         <img src="./Img/carusel-1.png" alt="">
-                        <div class="container"> 
+                        <div class="containers"> 
                               <div class="icon_box">
                                 <div class="icon"><i class="fas fa-share-alt"></i></div>
                                 <div class="icon"><i class="far fa-eye"></i></div>
@@ -231,7 +257,7 @@
                     </div>
                     <div class="box_carusel">
                         <img src="./Img/carusel-1.png" alt="">
-                        <div class="container"> 
+                        <div class="containers"> 
                               <div class="icon_box">
                                 <div class="icon"><i class="fas fa-share-alt"></i></div>
                                 <div class="icon"><i class="far fa-eye"></i></div>
@@ -244,7 +270,7 @@
         
                     <div class="box_carusel">
                         <img src="./Img/carusel-1.png" alt="">
-                        <div class="container"> 
+                        <div class="containers"> 
                               <div class="icon_box">
                                 <div class="icon"><i class="fas fa-share-alt"></i></div>
                                 <div class="icon"><i class="far fa-eye"></i></div>
@@ -257,7 +283,7 @@
                     </div>
                     <div class="box_carusel carusel_active">
                         <img src="./Img/Youtube - biz haqimizda.jpg" alt="">
-                        <div class="container"> 
+                        <div class="containers"> 
                               <div class="icon_box">
                                 <div class="icon"><i class="fas fa-share-alt"></i></div>
                                 <div class="icon"><i class="far fa-eye"></i></div>
@@ -289,7 +315,7 @@
 
 
     <section class="help">
-            <div class="container">
+            <div class="containers">
                 <h1>Nega bizni tanlashadi?</h1>
                 <div class="help_item">
                     <div class="help_box">
@@ -341,7 +367,7 @@
     
        <footer>
       
-        <div class="container">
+        <div class="containers">
             <div class="foot_scroll">
                 <a href="#"><img src="./Img/Scroll.png" alt=""></a>
             </div>
@@ -387,26 +413,7 @@
   </script>
 
 <script>
-      $(document).ready(function(){
-        $('.post_container').owlCarousel({
-            pagination:false,
-            autoplay:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                700:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                },
-                1200:{
-                    items:4
-                },
-            }
-        })
-      })
+
 </script>
 </body>
 </html>

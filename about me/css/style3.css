@@ -379,6 +379,7 @@ header .container{
 
 .my_work{
     width: 100%;
+    margin-top: 30px;
 }
 .my_work .container{
     position: relative;
@@ -438,11 +439,80 @@ header .container{
     margin-right: 0px;
 }
 
+/* START WORK */
+
+.start_work{
+    width: 100%;
+    padding-top: 0px;
+}
+.start_work h1{
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: #1E2725;
+    text-align: center;
+
+}
+.start_work p{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #1E2725;
+    padding-top: 15px;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 328px;
+    width: 100%;
+    background: #F8F8F8;
+    position: relative;
+    margin-top: 30px;
+}
+.form_item input{
+    width: 406px;
+    height: 60px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    overflow: hidden;
+    padding-left: 20px;
+    margin-right: 15px;
+}
+.form_item label{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color:#F8F8F8;
+    padding: 0 3px;
+}
+.form_item label > span{
+    color:crimson;
+}
+.btn{
+    display: inline-block;
+    width: 203px;
+    margin-left: 100%;
+    margin-top: -11%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form_item ::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1E2725;
+    padding-left: 20px;
+}
+
 /* FOOTER */
 
-/* footer{
+footer{
     width: 100%;
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
 }
 .foot_img{
@@ -482,16 +552,17 @@ footer h3{
 
 
 .footer_item{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
     top: 120px;
+    left: 0;
     z-index: 999;
 }
-
-
+.foot_scroll{
+    margin-top: -35px;
+}
 .foot_text h4{
     padding-top: 20px;
     font-weight: 500;
@@ -518,6 +589,7 @@ footer h3{
 }
 
 .foot_bottom{
+    display: block;
     width: 100%;
     height: 60px;
     background: #1E1E1E;
@@ -530,6 +602,7 @@ footer h3{
     margin-left: 200px;
     padding-top: 18px;
 }
+
 .foot_bottom span{
     color: #30E2B5;
     margin: 0 15px;
@@ -539,4 +612,4 @@ footer h3{
 }
 .foot_bottom b{
     font-weight: 400;
-} */
+} 

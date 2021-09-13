@@ -60,6 +60,19 @@ select{
     margin-left: 5px;
     outline: none;
 }
+.fa-times{
+    position: absolute;
+    top: -170px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.active{
+    display: block;
+}
+.none{
+    display: none;
+}
 option{
     color:black;
 }
@@ -118,8 +131,11 @@ nav{
     padding: 15px 0;
 }
 
+nav ul ul{
+    display: none;
+}
 nav img{
-    margin: 0;
+    margin: 0px;
     padding: 0;
 }
 nav ul {
@@ -127,6 +143,7 @@ nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    margin-left: 200px;
 }
 nav ul li{
     margin-right: 50px;
@@ -152,9 +169,10 @@ nav .corzina input{
     align-items: center;
     justify-content: center;
 }
-ul .fa-search{
+.corzina .fa-search{
     color:#1E2725;
     margin-left: -35px;
+    margin-right: 25px;
 }  
 #internet-item{
     display: flex;
@@ -482,6 +500,7 @@ footer h3{
 }
 
 .foot_bottom{
+    display: block;
     width: 100%;
     height: 60px;
     background: #1E1E1E;
