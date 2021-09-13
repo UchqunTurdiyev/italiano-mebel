@@ -6,39 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page 1</title>
     <style>
-        .slider{
-            width: 80%;
-            margin: auto;
-        }
-        .slide_box{
-            display: flex;
-            justify-content: center;
-            align-items:center;
-        }
-        .slide_img{
-            width: 50%;
-            border:1px solid;
-        }
+        .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal_bottom{
+    width: 20%;
+    height: 1410px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background: white;
+    padding: 0 40px;
+}
+.modal_box{
+    display: flex;
+    align-items:center;
+
+    padding: 30px 0;
+    border-bottom:1px dashed #828282;
+}
+.modal_text span{
+
+position: absolute;
+padding: 3px 6px;
+background: #30E2B5;
+color:white
+/* transform: rotate(-90deg); */
+}
+.modal_text{
+    margin-left: 20px;
+}
+.modal_text p{
+    color: #828282;
+}
+
+
+/* FORM */
+
+.form_item input{
+    width: 100px;
+    height: 60px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    overflow: hidden;
+    padding-left: 20px;
+    margin-right: 15px;
+}
+.form_item label{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color:#F8F8F8;
+    padding: 0 3px;
+}
+.form_item label > span{
+    color:crimson;
+}
+
+.form_item ::placeholder{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1E2725;
+    padding-left: 20px;
+}
+
     </style>
 </head>
 <body>
-    <div class="slider">
-        <div class="container">
-            <div class="slide_box">
-            <div class="slide_img">
-                <img src="./Img/Rectangle 1664.png" alt="">
+    <div class="modal">
+        <div class="modal_bottom">
+            <div class="modal_box">
+            <img src="../Img/Rectangle 1636 (15).png" alt="">
+            <div class="modal_text">
+            <p>Morezza</p>
+            <h3>2.560.000 so‘m</h3>
+            <span>new</span>
             </div>
-            <div class="slide_text">
-                <h2>NEO CLASSIC</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quaerat quam impedit dolor facere ex minus minima illo blanditiis at.
-                </p>
-                <hr>
-                <span>2.560.000 so'm </span> <p>Lorem ipsum dolor sit amet.</p>
-                <button>savatga qoshish</button>
-                
             </div>
+            <div class="modal_box">
+                <img src="../Img/Rectangle 1636 (15).png" alt="">
+                <div class="modal_text">
+                <p>Morezza</p>
+                <h3>2.560.000 so‘m</h3>
+                <span>new</span>
+                </div>
+                </div>
+                <div class="modal_box">
+                    <img src="../Img/Rectangle 1636 (15).png" alt="">
+                    <div class="modal_text">
+                    <p>Morezza</p>
+                    <h3>2.560.000 so‘m</h3>
+                    <span>new</span>
+                    </div>
+                    </div>
+                    <div class="modal_box">
+                        <img src="../Img/Rectangle 1636 (15).png" alt="">
+                        <div class="modal_text">
+                        <p>Morezza</p>
+                        <h3>2.560.000 so‘m</h3>
+                        <span>new</span>
+                        </div>
+                        </div>
+                        <div class="modal_box">
+                            <img src="../Img/Rectangle 1636 (15).png" alt="">
+                            <div class="modal_text">
+                            <p>Morezza</p>
+                            <h3>2.560.000 so‘m</h3>
+                            <span>new</span>
+                            </div>
+                            </div>
+            
         </div>
+        <!-- <div class="modal_form">
+            <form action="">
+                <div class="forms">
+                <div class="form_item">
+                    <label for="">Ismingiz</label><br>
+                    <input type="text"placeholder="Uchqun"><br><br>
+                    <label for="">Telefon raqam <span>*</span></label><br>
+                    <input type="number"placeholder="99 _ _ _"> 
+                    <button class="btn">Jo‘natish <img src="./Img/button.png" alt=""></button>
+                </div>
+                </form> -->
         </div>
     </div>
     <!-- screen cast -->

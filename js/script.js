@@ -1,6 +1,25 @@
 " use strict";
 
 window.addEventListener("DOMContentLoaded", () => {
+
+    const bars = document.querySelector('.bars'),
+    navItem = document.querySelector('ul'),
+    times = document.querySelector('.fa-times'),
+    main = document.querySelector('main');
+    input = document.querySelector('.corzina input'),
+    search = document.querySelector('.fa-search');
+
+    bars.addEventListener('click', () => {
+        navItem.classList.add("active");
+        main.classList.add("main_none");
+    })
+    times.addEventListener('click', () =>{
+        navItem.classList.remove("active"),
+        main.classList.remove("main_none");
+    })
+    
+    
+
        // CARUSELL..................
 
        const left = document.querySelector('.fa-angle-left'),
@@ -32,35 +51,16 @@ window.addEventListener("DOMContentLoaded", () => {
            }
        }
         
+    //    MODALL............
 
-    //          // CARUSELL..................
+    const modal = document.querySelector('.modal'),
+    savat = document.querySelector('.fa-shopping-bag'),
+    exit = document.querySelector('.modal_text b');
 
-    //    const left2 = document.querySelector('.fa-angle-left'),
-    //    right2 = document.querySelector('.fa-angle-right'),
-    //    carusel2 = document.querySelectorAll('.box_carusel');
-    //    let n = 0;
-   
-    //        right2.onclick = () =>{
-    //        n++;
-    //    for(var i of carusel2){     
-    //        if(n==0) {i.style.left2 = "0px";}
-    //        if(n==1) {i.style.left2 = "-220px";}
-    //        if(n==2) {i.style.left2 = "-440px";}
-    //        if(n==3) {i.style.left2 = "-660px";}
-    //        if(n==4) {i.style.left2 = "-880px";}
-    //        if(n > 4) {n = 4;}
-    //        }
-    //    }
-        
-    //    left.onclick = () =>{
-    //        n--;
-    //    for(var i of carusel){     
-    //        if(n==0) {i.style.left2 = "0px";}
-    //        if(n==1) {i.style.left2 = "-220px";}
-    //        if(n==2) {i.style.left2 = "-440px";}
-    //        if(n==3) {i.style.left2 = "-660px";}
-    //        if(n==4) {i.style.left2 = "-880px";}
-    //        if(n < 0) {n = 0;}
-    //        }
-    //    }
+    savat.addEventListener('click', () => {
+        modal.style.display = "block";
+    })
+    exit.addEventListener('click', () => {
+        modal.style.display = "none";
+    })
 });
