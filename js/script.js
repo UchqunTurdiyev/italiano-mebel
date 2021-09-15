@@ -7,6 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
     times = document.querySelector('.fa-times'),
     main = document.querySelector('main');
     input = document.querySelector('.corzina input'),
+    exitSearch = document.querySelector('.corzina b'),
     search = document.querySelector('.fa-search');
 
     bars.addEventListener('click', () => {
@@ -16,6 +17,16 @@ window.addEventListener("DOMContentLoaded", () => {
     times.addEventListener('click', () =>{
         navItem.classList.remove("active"),
         main.classList.remove("main_none");
+    })
+
+    
+    search.addEventListener('click', () =>{
+        input.style.display = 'block';
+        exitSearch.style.display = 'block';
+    })
+    exitSearch.addEventListener('click', () =>{
+        input.style.display = 'none';
+        exitSearch.style.display = 'none';
     })
     
     
@@ -62,5 +73,10 @@ window.addEventListener("DOMContentLoaded", () => {
     })
     exit.addEventListener('click', () => {
         modal.style.display = "none";
-    })
+    });
+
+         
+     
+      
+     
 });

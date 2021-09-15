@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>page 1</title>
+  
+
     <style>
         .modal {
     position: fixed;
@@ -16,130 +18,368 @@
     height: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
-}
-.modal_bottom{
-    width: 20%;
-    height: 1410px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    background: white;
-    padding: 0 40px;
-}
-.modal_box{
-    display: flex;
-    align-items:center;
+    }
+    .modals{
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    .modalca{
+        background: #E3E3E3;
+        width: 70%;
+        height: 410px;
+        display: flex;
+        padding: 40px;
+        justify-content: center;
+        align-items:center
+    }
+    .modal_carusel{
+        width: 620px;
+        height: 300px;
+        margin-top: -70px;
+    }
+    .modal_carusel img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .carusel_items{
+        width: 100%;
+        height:100px;
+        margin: 20px auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .carusel_box{
+        width: 95%;
+        height: 100px;
+        margin: 1px auto;
+        display: flex;
+        justify-content: left;
+        overflow-x: auto;
+    }
+    .carusel_box img{
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    .carusel_box::-webkit-scrollbar{
+        visibility: hidden;
+    }
+    .box_img_carusel{
+        min-width: 120px;
+        height:100px;
+        position: relative;
+        left: 0;
+        text-align: center;
+        margin: 10px;
+        transition: 0.5s;
+    }
 
-    padding: 30px 0;
-    border-bottom:1px dashed #828282;
-}
-.modal_text span{
 
-position: absolute;
-padding: 3px 6px;
-background: #30E2B5;
-color:white
-/* transform: rotate(-90deg); */
-}
-.modal_text{
-    margin-left: 20px;
-}
-.modal_text p{
-    color: #828282;
-}
+    .carusel_items span{
+        position: absolute;
+        top: 40%;
+        font-size: 60px;
+        font-weight: bold;
+        color: purple;
+        cursor: pointer;
+        top: 5px;
+        z-index: 2;
+    }
+    .carusel_items span:nth-of-type(2){
+        left: 95%;
+        text-align: right;
+    }
 
 
-/* FORM */
+ 
+    .modal_carusel2 ul{
+        list-style: none;
+    } 
+    .modal_carusel2 ul li:nth-child(2){
+        padding: 15px;
+        border:1px dashed;
+        border-left: none;
+        border-right: none;
+    } 
+    .modal_carusel2 li h2{
+        margin-top: 0px;
+    }
+    .modal_carusel2 li h3{
+        margin-top: 50px;
+    }
 
-.form_item input{
-    width: 100px;
-    height: 60px;
-    border: 1px solid #BDBDBD;
-    box-sizing: border-box;
-    background: #F8F8F8;
-    overflow: hidden;
-    padding-left: 20px;
-    margin-right: 15px;
-}
-.form_item label{
-    position: relative;
-    top: 10px;
-    left: 20px;
-    background-color:#F8F8F8;
-    padding: 0 3px;
-}
-.form_item label > span{
-    color:crimson;
+    .modal_carusel2 li span{
+        margin-left: 20%;
+    }
+   
+    .modal_carusel{
+        position: relative;
+    }
+    .modal_carusel2 button{
+        margin-top: 30px;
+        width: 223px;
+        height: 49px;
+        background: #F53737;
+        color:white;
+    }
+
+
+
+@media (max-width: 1500px){
+    .modal_carusel{
+        width: 50%;
+        height: 300px;
+        margin-top: -70px;
+    }
 }
 
-.form_item ::placeholder{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #1E2725;
-    padding-left: 20px;
+@media (max-width: 1200px){
+    .modal_carusel{
+        width: 50%;
+        height: 300px;
+        margin-top: -70px;
+    }
+    .modal_carusel2 li h3{
+        margin-top: 20px;
+    }
+    .modalca{
+        background: #E3E3E3;
+        width: 80%;
+        height: 410px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1060px){
+    .box_img_carusel{
+        min-width: 90px;
+        height:70px;
+        margin: 5px;
+    }
+
+    .modal_carusel{
+        height: 240px;
+        margin-top: -70px;
+    }
+    .modal_carusel img{
+        width: 100%;
+        height: 240px;
+    }
+    .modal_carusel2 button{
+        margin-top: 10px;
+    }
+    .modal_carusel2 li h3{
+        margin-top: 20px;
+    }
+    .modal_carusel2 ul li:nth-child(2){
+        padding: 0px;
+    } 
+    .modals{
+        display: flex;
+        justify-content: center;
+        margin-top: 25%;
+    }
+    .modalca{
+        width: 90%;
+        height: 360px;
+        display: flex;
+        padding: 20px;
+    }
+    .modal_carusel2 li p:nth-child(2){
+        display: none;
+    }
+}
+
+@media (max-width: 760px){
+    .modals{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .modalca{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .modal_carusel{
+        width: 80%;
+        height: 300px;
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+    .modal_carusel2{
+        margin-top: 70px;
+        padding: 0 40px 10px 0;
+    }
+
+}
+
+@media (max-width: 420px){
+    .modal_carusel{
+        width: 90%;
+        margin-top: 20px;
+        margin-left: -20px;
+    }
 }
 
     </style>
 </head>
 <body>
     <div class="modal">
-        <div class="modal_bottom">
-            <div class="modal_box">
-            <img src="../Img/Rectangle 1636 (15).png" alt="">
-            <div class="modal_text">
-            <p>Morezza</p>
-            <h3>2.560.000 so‘m</h3>
-            <span>new</span>
-            </div>
-            </div>
-            <div class="modal_box">
-                <img src="../Img/Rectangle 1636 (15).png" alt="">
-                <div class="modal_text">
-                <p>Morezza</p>
-                <h3>2.560.000 so‘m</h3>
-                <span>new</span>
-                </div>
-                </div>
-                <div class="modal_box">
-                    <img src="../Img/Rectangle 1636 (15).png" alt="">
-                    <div class="modal_text">
-                    <p>Morezza</p>
-                    <h3>2.560.000 so‘m</h3>
-                    <span>new</span>
-                    </div>
-                    </div>
-                    <div class="modal_box">
-                        <img src="../Img/Rectangle 1636 (15).png" alt="">
-                        <div class="modal_text">
-                        <p>Morezza</p>
-                        <h3>2.560.000 so‘m</h3>
-                        <span>new</span>
-                        </div>
-                        </div>
-                        <div class="modal_box">
-                            <img src="../Img/Rectangle 1636 (15).png" alt="">
-                            <div class="modal_text">
-                            <p>Morezza</p>
-                            <h3>2.560.000 so‘m</h3>
-                            <span>new</span>
-                            </div>
-                            </div>
-            
+        <div class="modals">
+    <div class="modalca">
+    <div class="modal_carusel">    
+        <div class="tabheader tab_header_active"><img src="./Img/carusel-2.png" alt=""></div>
+       <div class="tabheader"><img src="./Img/carusel-3.png" alt=""></div> 
+        <div class="tabheader"><img src="./Img/carusel-1.png" alt=""></div>
+        <div class="tabheader"><img src="./Img/carusle-4.png" alt=""></div>
+        <div class="tabheader"><img src="./Img/carusel-2.png" alt=""></div>
+        <div class="tabheader"><img src="./Img/carusel-3.png" alt=""></div>
+        <div class="tabheader"><img src="./Img/carusle-4.png" alt=""></div>
+        <div class="tabheader"><img src="./Img/carusel-1.png" alt=""></div>
+       <div class="carusel_items">
+       <span class="right">&#139;</span>
+       <span class="left">&#155;</span>
+        <div class="carusel_box carusel_box2">
+            <div class="box_img_carusel"><img src="./Img/carusel-2.png" alt=""></div>
+            <div class="box_img_carusel"><img src="./Img/carusel-3.png" alt=""></div>
+            <div class="box_img_carusel"><img src="./Img/carusel-1.png" alt=""></div>
+            <div class="box_img_carusel"><img src="./Img/carusle-4.png" alt=""></div>
+            <div class="box_img_carusel"><img src="./Img/carusel-2.png" alt=""></div>
+            <div class="box_img_carusel"><img src="./Img/carusel-3.png" alt=""></div>
+            <div class="box_img_carusel"><img src="./Img/carusle-4.png" alt=""></div>
+            <div class="box_img_carusel"><img src="./Img/carusel-1.png" alt=""></div>
         </div>
-        <!-- <div class="modal_form">
-            <form action="">
-                <div class="forms">
-                <div class="form_item">
-                    <label for="">Ismingiz</label><br>
-                    <input type="text"placeholder="Uchqun"><br><br>
-                    <label for="">Telefon raqam <span>*</span></label><br>
-                    <input type="number"placeholder="99 _ _ _"> 
-                    <button class="btn">Jo‘natish <img src="./Img/button.png" alt=""></button>
-                </div>
-                </form> -->
-        </div>
+         </div>
+        
     </div>
+    <div class="modal_carusel2">
+        <ul>
+            <li><h2>NEO CLASSIC</h2></li>
+            <li>
+                <p>Lorem ipsum is a name for a common type of placeholder text. Also known as filler or dummy text, this is simply copy that serves to fill a space without actually saying anything meaningful. </p>
+                <p>
+                    It's essentially nonsense text, but gives an idea of what real words will look like in the final product.
+                </p>
+            </li>
+            <li>
+                <h3>2.560.000 so‘m <span>Izoh: Belgilangan narx m2 uchun </span></h3>
+            </li>
+            <li>
+                <button>Savatga qo‘shish</button>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
     <!-- screen cast -->
+<script>
+        // CARUSELL..................
+
+        const left = document.querySelector('.right'),
+       right = document.querySelector('.left'),
+       boxCarusel = document.querySelectorAll('.box_img_carusel');
+       let l = 0;
+   
+           right.onclick = () =>{
+           l++;
+     
+       for(var i of boxCarusel){     
+           if(l==0) {i.style.left = "0px";}
+           if(l==1) {i.style.left = "-140px";}
+           if(l==2) {i.style.left = "-280px";}
+           if(l==3) {i.style.left = "-420px";}
+           if(l==4) {i.style.left = "-560px";}
+           if(l > 4) {l = 4;}
+           }
+       }
+        
+       left.onclick = () =>{
+           l--;
+       for(var i of boxCarusel){     
+           if(l==0) {i.style.left = "0px";}
+           if(l==1) {i.style.left = "-140px";}
+           if(l==2) {i.style.left = "-280px";}
+           if(l==3) {i.style.left = "-420px";}
+           if(l==4) {i.style.left = "-560px";}
+           if(l < 0) {l = 0;}
+           }
+       }
+
+    //    TABSS........
+
+    const tabs = document.querySelectorAll('.box_img_carusel'),
+    tabHeader = document.querySelectorAll('.tabheader'),
+    headerContent = document.querySelector('.carusel_box2');
+
+    function hideTabContent() {
+        tabHeader.forEach(item => {
+            item.style.display = 'none';
+        });
+        tabs.forEach(item => {
+            item.classList.remove('tab_header_active');
+        })
+    }
+
+    function showTabcontent(i = 0) {
+        tabHeader[i].style.display = 'block';
+        tabs[i].classList.add('tab_header_active');
+    }
+    hideTabContent();
+    showTabcontent();
+
+
+
+    headerContent.addEventListener('click',(event) =>{
+
+        if(event.target && event.target.classList.contains(".box_img_carusel")) {
+            tabs.forEach((item, i) => {
+                if(event.target == item ){
+                    hideTabContent();
+                    showTabcontent(i);
+                }
+            })
+        }
+    })
+
+
+// TABS
+
+// const tabs = document.querySelectorAll(".tabheader__item"),
+// tabContent = document.querySelectorAll(".tabcontent"),
+// headerPerent = Document.querySelector(".tabheader__items");
+
+// function hideTabContent() {
+//   tabContent.forEach(item => {
+//     item.style.display = "none";
+//   });
+//   tabs.forEach(item => {
+//     item.classList.remove("tabheader__item_active");
+//   });
+// }
+
+// function showTabContent(i = 0) {
+//   tabContent[i].style.display = "block";
+//   tabs[i].classList.add("tabheader__item_active");
+// }
+// hideTabContent();
+// showTabContent();
+
+// headerPerent.addEventListener('click', (event) => {
+//   if(event.target && event.target.classList.contains('tabheader__item')) {
+//     tabs.forEach((item, i) => {
+//       if(event.target == item) {
+//         hideTabContent();
+//         showTabContent(i);
+//       }
+//     })
+//   }
+// })
+</script>
 </body>
 </html>

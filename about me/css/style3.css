@@ -374,6 +374,143 @@ header .container{
     margin-right:35px;
 }
 
+/* MODAL................ */
+nav .corzina input{
+    border:none;
+    background: #F2F2F2;
+    border-radius: 50px;  
+    width: 183px;
+    height: 38px;
+    padding: 0 20px;
+    outline: none;
+}
+.corzina{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.corzina .fa-search{
+    color:#1E2725;
+    margin-left: -35px;
+    margin-right: 25px;
+} 
+
+.corzina{
+    position: relative;
+}
+.corzina b{
+    display: none;
+    position: absolute;
+    color:red;
+    cursor:pointer;
+    top: 20px;
+    left: -20px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal_bottom{
+    width: 400px;
+    height: 1410px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    background: white;
+    padding: 0 40px;
+    overflow-y:scroll;
+    display: block;
+}
+.modal_bottom{
+    position: absolute;
+    top: 130px;
+    right: 10%;
+}
+.modal_box{
+    display: flex;
+    align-items:flex-start;
+    padding: 15px 0;
+    border-bottom:1px dashed #828282;
+}
+.modal_box img{
+    width: 100px;
+    position: relative;
+}
+.modal_text h3{
+    margin: 0;
+    padding: 6px 0;
+}
+.modal_text b{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    color:red;
+    font-size: 20px;
+}
+.modal_text p{
+    margin: 0;
+    padding: 0;
+}
+.modal_text span{
+
+position: absolute;
+padding: 3px 6px;
+background: #30E2B5;
+color:white
+/* transform: rotate(-90deg); */
+}
+.modal_text{
+    margin-left: 20px;
+}
+.modal_text p{
+    color: #828282;
+}
+.modal_all{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -12px;
+}
+.modal_all p{
+    font-size: 24px;
+}
+.modal_bottom::placeholder{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    color: #1E2725;
+    padding-left: 20px;
+}
+
+.modal_bottom input{
+    width: 280px;
+    height: 45px;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    background: #F8F8F8;
+    overflow: hidden;
+    padding-left: 20px;
+    margin-right: 15px;
+    outline: none;
+}
+.modal_bottom label{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    background-color:#F8F8F8;
+    padding: 0 3px;
+}
+.modal_bottom button{
+  margin-top: 18px;
+  cursor: pointer;
+}
 
 /* MY WORK.......... */
 
